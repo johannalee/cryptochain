@@ -1,6 +1,13 @@
 import { GENESIS_DATA } from './config';
 import { cryptoHash } from './crypto-hash';
-export interface BlockProps { timestamp: number, lastHash: string, hash: string, data: any };
+
+export interface BlockProps { 
+    timestamp: number;
+    lastHash: string;
+    hash: string;
+    data: any;
+}
+
 class Block {
     timestamp: number;
     lastHash: string;
